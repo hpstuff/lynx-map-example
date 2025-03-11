@@ -1,0 +1,1 @@
+../../../Lynx/lynx/core/runtime/bindings/jsi/console.h

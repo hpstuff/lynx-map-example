@@ -1,0 +1,1 @@
+../../../Lynx/lynx/core/renderer/template_assembler.h

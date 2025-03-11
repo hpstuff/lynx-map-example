@@ -1,0 +1,1 @@
+../../../../../PrimJS/src/inspector/interface.h

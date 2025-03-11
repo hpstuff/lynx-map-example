@@ -1,0 +1,1 @@
+../../../Lynx/lynx/platform/darwin/ios/lynx/event/LynxTouchHandler+Internal.h

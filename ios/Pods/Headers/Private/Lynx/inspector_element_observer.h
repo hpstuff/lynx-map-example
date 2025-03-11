@@ -1,0 +1,1 @@
+../../../Lynx/lynx/core/inspector/observer/inspector_element_observer.h

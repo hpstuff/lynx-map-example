@@ -1,0 +1,1 @@
+../../../Lynx/lynx/core/template_bundle/template_codec/binary_decoder/lynx_binary_base_template_reader.h

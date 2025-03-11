@@ -1,0 +1,1 @@
+../../../Lynx/lynx/core/inspector/observer/inspector_lepus_observer.h

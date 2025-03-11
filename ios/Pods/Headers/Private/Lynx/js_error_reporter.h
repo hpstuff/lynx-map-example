@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/runtime/common/js_error_reporter.h

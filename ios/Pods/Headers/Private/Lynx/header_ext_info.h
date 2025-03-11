@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/template_bundle/template_codec/header_ext_info.h

@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/starlight/style/css_type.h

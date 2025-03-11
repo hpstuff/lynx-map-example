@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/utils/base/element_template_info.h

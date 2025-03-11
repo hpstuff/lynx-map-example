@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/shell/ios/vsync_monitor_darwin.h

@@ -1,1 +1,0 @@
-../../../Lynx/lynx/platform/darwin/ios/lynx/public/hero_transitions/LynxUI+LynxHeroTransition.h

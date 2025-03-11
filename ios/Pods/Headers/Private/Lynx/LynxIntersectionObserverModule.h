@@ -1,1 +1,0 @@
-../../../Lynx/lynx/platform/darwin/ios/lynx/module/LynxIntersectionObserverModule.h

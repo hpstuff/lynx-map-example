@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/style/background_data.h

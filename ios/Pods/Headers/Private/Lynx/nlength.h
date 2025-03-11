@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/starlight/types/nlength.h

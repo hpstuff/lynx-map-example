@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/animation/basic_animation/thread_local_animation_handler.h

@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/starlight/style/relative_data.h

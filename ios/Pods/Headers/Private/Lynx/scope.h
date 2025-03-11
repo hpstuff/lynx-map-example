@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/signal/scope.h

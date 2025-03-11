@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/css/parser/cursor_handler.h

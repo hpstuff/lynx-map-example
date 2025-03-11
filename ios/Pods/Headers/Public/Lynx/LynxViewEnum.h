@@ -1,1 +1,0 @@
-../../../Lynx/lynx/platform/darwin/common/lynx/public/LynxViewEnum.h

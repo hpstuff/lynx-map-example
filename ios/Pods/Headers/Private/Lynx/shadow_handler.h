@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/css/parser/shadow_handler.h

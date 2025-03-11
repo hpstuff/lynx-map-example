@@ -18,7 +18,7 @@
   lynxView.layoutHeightMode = LynxViewSizeModeExact;
   [self.view addSubview:lynxView];
 
-  [lynxView loadTemplateFromURL:@"main.lynx" initData:nil];
+  [lynxView loadTemplateFromURL:@"http://192.168.31.127:3000/main.lynx.bundle?fullscreen=true" initData:nil];
 }
 
 @end

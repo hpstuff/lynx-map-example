@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/resource/lynx_resource_setting.h

@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/animation/basic_animation/basic_animation_curve.h

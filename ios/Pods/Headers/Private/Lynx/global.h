@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/runtime/bindings/jsi/global.h

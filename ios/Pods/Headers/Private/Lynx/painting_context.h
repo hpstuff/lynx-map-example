@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/ui_wrapper/painting/painting_context.h

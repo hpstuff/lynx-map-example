@@ -1,1 +1,0 @@
-../../../Lynx/lynx/platform/darwin/ios/lynx/public/ui/list/LynxListAppearEventEmitter.h

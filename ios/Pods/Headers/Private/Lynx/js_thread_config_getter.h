@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/base/threading/js_thread_config_getter.h

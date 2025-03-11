@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/shared_data/white_board_runtime_delegate.h

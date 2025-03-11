@@ -16,7 +16,9 @@
 		2B94A43A2D66D75D0060892C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A4392D66D75D0060892C /* main.m */; };
 		2B94A4422D66D9020060892C /* AssetsLynxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A4412D66D9020060892C /* AssetsLynxProvider.m */; };
 		2BE49E012D772022000D068C /* main.lynx.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BE49E002D772022000D068C /* main.lynx.bundle */; };
+		71378AA22D81A58800A1AA70 /* AppleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 71378AA12D81A58500A1AA70 /* AppleMap.m */; };
 		71C4FB032D80361100F25160 /* NetworkLynxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4FB022D80361100F25160 /* NetworkLynxProvider.m */; };
+		71C4FB092D8041BB00F25160 /* GoogleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4FB072D8041BB00F25160 /* GoogleMaps.m */; };
 		86E7B01582E06A20492D1534 /* libPods-Hello-Lynx-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A06CDDD955596B891E6B6BF9 /* libPods-Hello-Lynx-OC.a */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +38,12 @@
 		2B94A4402D66D8E90060892C /* AssetsLynxProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsLynxProvider.h; sourceTree = "<group>"; };
 		2B94A4412D66D9020060892C /* AssetsLynxProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsLynxProvider.m; sourceTree = "<group>"; };
 		2BE49E002D772022000D068C /* main.lynx.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.lynx.bundle; sourceTree = "<group>"; };
+		71378AA02D81A57C00A1AA70 /* AppleMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleMap.h; sourceTree = "<group>"; };
+		71378AA12D81A58500A1AA70 /* AppleMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleMap.m; sourceTree = "<group>"; };
 		71C4FB012D80361100F25160 /* NetworkLynxProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLynxProvider.h; sourceTree = "<group>"; };
 		71C4FB022D80361100F25160 /* NetworkLynxProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLynxProvider.m; sourceTree = "<group>"; };
+		71C4FB062D8041BB00F25160 /* GoogleMaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMaps.h; sourceTree = "<group>"; };
+		71C4FB072D8041BB00F25160 /* GoogleMaps.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMaps.m; sourceTree = "<group>"; };
 		A06CDDD955596B891E6B6BF9 /* libPods-Hello-Lynx-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hello-Lynx-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9695ABCCF7947190ACADB86 /* Pods-Hello-Lynx-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello-Lynx-OC.debug.xcconfig"; path = "Target Support Files/Pods-Hello-Lynx-OC/Pods-Hello-Lynx-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E30BCE264EB1BB0068F0ACAA /* Pods-Hello-Lynx-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello-Lynx-OC.release.xcconfig"; path = "Target Support Files/Pods-Hello-Lynx-OC/Pods-Hello-Lynx-OC.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 		2B94A4262D66D75B0060892C /* Hello-Lynx-OC */ = {
 			isa = PBXGroup;
 			children = (
+				71378AA32D81A59000A1AA70 /* apple-map */,
+				71C4FB082D8041BB00F25160 /* google-maps */,
 				2B94A4272D66D75B0060892C /* AppDelegate.h */,
 				2B94A4282D66D75B0060892C /* AppDelegate.m */,
 				2B94A42A2D66D75B0060892C /* SceneDelegate.h */,
@@ -103,6 +111,24 @@
 				E30BCE264EB1BB0068F0ACAA /* Pods-Hello-Lynx-OC.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		71378AA32D81A59000A1AA70 /* apple-map */ = {
+			isa = PBXGroup;
+			children = (
+				71378AA02D81A57C00A1AA70 /* AppleMap.h */,
+				71378AA12D81A58500A1AA70 /* AppleMap.m */,
+			);
+			path = "apple-map";
+			sourceTree = "<group>";
+		};
+		71C4FB082D8041BB00F25160 /* google-maps */ = {
+			isa = PBXGroup;
+			children = (
+				71C4FB062D8041BB00F25160 /* GoogleMaps.h */,
+				71C4FB072D8041BB00F25160 /* GoogleMaps.m */,
+			);
+			path = "google-maps";
 			sourceTree = "<group>";
 		};
 		ABB48744282C21327F3FE69C /* Frameworks */ = {
@@ -231,7 +257,9 @@
 				2B94A42F2D66D75B0060892C /* ViewController.m in Sources */,
 				2B94A4422D66D9020060892C /* AssetsLynxProvider.m in Sources */,
 				2B94A4292D66D75B0060892C /* AppDelegate.m in Sources */,
+				71C4FB092D8041BB00F25160 /* GoogleMaps.m in Sources */,
 				2B94A43A2D66D75D0060892C /* main.m in Sources */,
+				71378AA22D81A58800A1AA70 /* AppleMap.m in Sources */,
 				71C4FB032D80361100F25160 /* NetworkLynxProvider.m in Sources */,
 				2B94A42C2D66D75B0060892C /* SceneDelegate.m in Sources */,
 			);

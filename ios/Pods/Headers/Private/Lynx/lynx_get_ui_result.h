@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/dom/lynx_get_ui_result.h

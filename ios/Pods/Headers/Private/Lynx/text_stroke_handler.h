@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/renderer/css/parser/text_stroke_handler.h

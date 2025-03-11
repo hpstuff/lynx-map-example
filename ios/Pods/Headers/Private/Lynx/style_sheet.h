@@ -1,1 +1,0 @@
-../../../Lynx/lynx/core/inspector/style_sheet.h

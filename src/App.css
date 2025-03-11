@@ -1,119 +1,83 @@
 :root {
-  background-color: #000;
-  --color-text: #fff;
+  background-color: red;
+  --color-text: #000;
 }
 
-.Background {
+.container {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.map {
   position: fixed;
-  background: radial-gradient(
-    71.43% 62.3% at 46.43% 36.43%,
-    rgba(18, 229, 229, 0) 15%,
-    rgba(239, 155, 255, 0.3) 56.35%,
-    #ff6448 100%
-  );
-  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  top: -60vw;
-  left: -14.27vw;
-  transform: rotate(15.25deg);
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
 }
 
-.App {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.overlay {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+
+  text {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 text {
   color: var(--color-text);
 }
 
-.Banner {
-  flex: 5;
+.modal {
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transform: translateY(100%);
+  transition: transform 0.15s linear; 
+}
+
+.modal.open {
+  transform: translateY(0);
+}
+
+.close-button {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  line-height: 1;
+  font-size: 1.5rem;
 }
 
-.Logo {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+.close-button:hover,
+.close-button:active {
+  opacity: 0.6;
 }
 
-.Logo--react {
-  width: 100px;
-  height: 100px;
-  animation: Logo--spin infinite 20s linear;
-}
-
-.Logo--lynx {
-  width: 100px;
-  height: 100px;
-  animation: Logo--shake infinite 0.5s ease;
-}
-
-@keyframes Logo--spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes Logo--shake {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.Content {
+.button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.Arrow {
-  width: 24px;
-  height: 24px;
-}
-
-.Title {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.Subtitle {
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.Description {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 15rpx;
-}
-
-.Hint {
-  font-size: 12px;
-  margin: 5px;
-  color: rgba(255, 255, 255, 0.65);
+  text {
+    display: block;
+    font-size: 3rem;
+    padding-bottom: 5px;
+    color: #fff;
+  }
 }

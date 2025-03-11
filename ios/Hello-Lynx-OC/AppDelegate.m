@@ -10,7 +10,9 @@
 #import <Lynx/LynxEnv.h>
 #import <Lynx/LynxView.h>
 
-#import "DemoLynxProvider.h"
+#import "NetworkLynxProvider.h"
+
+@import GoogleMaps;
 
 @interface AppDelegate ()
 
@@ -21,6 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"GOOGLE_MAPS_API_KEY"];
     [LynxEnv sharedInstance];
     return YES;
 }

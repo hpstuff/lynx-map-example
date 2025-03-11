@@ -1,1 +1,0 @@
-../../../Lynx/lynx/platform/darwin/ios/lynx/LynxTemplateRender+Protected.h

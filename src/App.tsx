@@ -1,44 +1,104 @@
-import { useCallback, useEffect, useState } from '@lynx-js/react'
+import { useCallback, useEffect, useRef, useState } from '@lynx-js/react'
+import type { EventHandler, StandardProps } from '@lynx-js/types';
 
 import './App.css'
-import arrow from './assets/arrow.png'
-import lynxLogo from './assets/lynx-logo.png'
-import reactLynxLogo from './assets/react-logo.png'
+
+interface LynxBaseEvent<T> {
+  detail: T
+}
+
+interface MapCameraPositionChange {
+  latitude: number;
+  longitude: number;
+  zoom: number;
+}
+
+interface MapMarkerTap {
+  id: string;
+}
+
+export interface MapProps extends StandardProps {
+  latitude?: number | undefined;
+  longitude?: number | undefined;
+  zoom?: number | undefined;
+  bindmarkertap: EventHandler<LynxBaseEvent<MapMarkerTap>>;
+  bindcamerapositionchange?: EventHandler<LynxBaseEvent<MapCameraPositionChange>>;
+}
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'google-map': MapProps;
+      'apple-map': MapProps;
+    }
+  }
+}
 
 export function App() {
-  const [alterLogo, setAlterLogo] = useState(false)
+  const [latitude, setLatitude] = useState(-33.86);
+  const [longitude, setLongitude] = useState(151.20);
+  const [zoom, setZoom] = useState(12.0);
+  const timeoutId = useRef<NodeJS.Timeout | null>(null);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    console.info('Hello, ReactLynx')
-  }, [])
+    'background only'
+    lynx
+      .createSelectorQuery()
+      .select("#map")
+      .invoke({
+        "method": "addMarker",
+        "params": {
+          id: "sofia-marker",
+          latitude: 42.69751,
+          longitude: 23.32415,
+        },
+      })
+      .exec();
+  }, []);
 
   const onTap = useCallback(() => {
     'background only'
-    setAlterLogo(!alterLogo)
-  }, [alterLogo])
+    setLatitude(42.69751);
+    setLongitude(23.32415);
+    setZoom(12.0);
+  }, [])
+
+  const onMarkerTap = useCallback((e: LynxBaseEvent<MapMarkerTap>) => {
+    'background only'
+    console.log("marker.id:", e.detail.id);
+    setOpen(true);
+  }, []);
+
+  const onCameraPositionChange = useCallback((e: LynxBaseEvent<MapCameraPositionChange>) => {
+    'background only'
+    clearTimeout(timeoutId.current!);
+    timeoutId.current = setTimeout(() => {
+      console.log("camera position change:", JSON.stringify(e.detail));
+      setLatitude(e.detail.latitude);
+      setLongitude(e.detail.longitude);
+      setZoom(e.detail.zoom);
+    }, 300);
+  }, []);
+
+  const onClose = useCallback(() => {
+    'background only'
+    setOpen(false);
+  }, []);
 
   return (
-    <view>
-      <view className='Background' />
-      <view className='App'>
-        <view className='Banner'>
-          <view className='Logo' bindtap={onTap}>
-            {alterLogo
-              ? <image src={reactLynxLogo} className='Logo--react' />
-              : <image src={lynxLogo} className='Logo--lynx' />}
-          </view>
-          <text className='Title'>React</text>
-          <text className='Subtitle'>on Lynx</text>
+    <view className={'container'}>
+      <apple-map id='map' className='map' latitude={latitude} longitude={longitude} zoom={zoom} bindmarkertap={onMarkerTap} bindcamerapositionchange={onCameraPositionChange} />
+      <view className={'overlay'}>
+        <text>{`lat: ${latitude}, lon: ${longitude}`}</text>
+      </view>
+      <view className={'button'} bindtap={onTap}>
+        <text>+</text>
+      </view>
+      <view className={`modal ${open && 'open'}`}>
+        <view className='close-button' bindtap={onClose}>
+          <text>✖</text>
         </view>
-        <view className='Content'>
-          <image src={arrow} className='Arrow' />
-          <text className='Description'>Tap the logo and have fun!</text>
-          <text className='Hint'>
-            Edit<text style={{ fontStyle: 'italic' }}>{' src/App.tsx '}</text>
-            to see updates!
-          </text>
-        </view>
-        <view style={{ flex: 1 }}></view>
       </view>
     </view>
   )

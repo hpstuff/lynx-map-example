@@ -11,12 +11,15 @@
 
 source 'https://cdn.cocoapods.org/'
 
-platform :ios, '9.0'
+platform :ios, '14.0'
 
 target 'Hello-Lynx-OC' do
   pod 'Lynx', '3.2.0-rc.0', :subspecs => [
     'Framework',
   ]
+
+  pod 'GoogleMaps', '7.3.0'
+  pod 'Google-Maps-iOS-Utils', '4.2.2'
 
   pod 'PrimJS', '2.11.1-rc.1', :subspecs => ['quickjs', 'napi']
 
@@ -25,7 +28,10 @@ target 'Hello-Lynx-OC' do
       'Image',
       'Log',
       'Http',
+      'Devtool',
   ]
+
+  pod 'DebugRouter', '5.0.6-alpha.2'
 
   # ImageService
   pod 'SDWebImage','5.15.5'

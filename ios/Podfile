@@ -13,9 +13,16 @@ source 'https://cdn.cocoapods.org/'
 
 platform :ios, '14.0'
 
+install!'cocoapods',:deterministic_uuids=>false,
+                    :lock_pod_sources=>false,
+                    :generate_multiple_pod_projects => true,
+                    :incremental_installation=>true,
+                    :warn_for_multiple_pod_sources => false
+
 target 'Hello-Lynx-OC' do
   pod 'Lynx', '3.2.0-rc.0', :subspecs => [
     'Framework',
+    'Replay',
   ]
 
   pod 'GoogleMaps', '7.3.0'

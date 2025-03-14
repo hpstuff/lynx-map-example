@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B94A4292D66D75B0060892C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A4282D66D75B0060892C /* AppDelegate.m */; };
-		2B94A42C2D66D75B0060892C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A42B2D66D75B0060892C /* SceneDelegate.m */; };
 		2B94A42F2D66D75B0060892C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A42E2D66D75B0060892C /* ViewController.m */; };
 		2B94A4322D66D75B0060892C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2B94A4312D66D75B0060892C /* Base */; };
 		2B94A4342D66D75D0060892C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B94A4332D66D75D0060892C /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		2B94A4422D66D9020060892C /* AssetsLynxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94A4412D66D9020060892C /* AssetsLynxProvider.m */; };
 		2BE49E012D772022000D068C /* main.lynx.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BE49E002D772022000D068C /* main.lynx.bundle */; };
 		71378AA22D81A58800A1AA70 /* AppleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 71378AA12D81A58500A1AA70 /* AppleMap.m */; };
+		71C17F582D8467E600EB98ED /* LynxInitProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C17F572D8467E600EB98ED /* LynxInitProcessor.m */; };
 		71C4FB032D80361100F25160 /* NetworkLynxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4FB022D80361100F25160 /* NetworkLynxProvider.m */; };
 		71C4FB092D8041BB00F25160 /* GoogleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4FB072D8041BB00F25160 /* GoogleMaps.m */; };
 		86E7B01582E06A20492D1534 /* libPods-Hello-Lynx-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A06CDDD955596B891E6B6BF9 /* libPods-Hello-Lynx-OC.a */; };
@@ -26,8 +26,6 @@
 		2B94A4242D66D75B0060892C /* Hello-Lynx-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-Lynx-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B94A4272D66D75B0060892C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B94A4282D66D75B0060892C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B94A42A2D66D75B0060892C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		2B94A42B2D66D75B0060892C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		2B94A42D2D66D75B0060892C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2B94A42E2D66D75B0060892C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2B94A4312D66D75B0060892C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		2BE49E002D772022000D068C /* main.lynx.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.lynx.bundle; sourceTree = "<group>"; };
 		71378AA02D81A57C00A1AA70 /* AppleMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleMap.h; sourceTree = "<group>"; };
 		71378AA12D81A58500A1AA70 /* AppleMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleMap.m; sourceTree = "<group>"; };
+		71C17F562D8467E600EB98ED /* LynxInitProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LynxInitProcessor.h; sourceTree = "<group>"; };
+		71C17F572D8467E600EB98ED /* LynxInitProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LynxInitProcessor.m; sourceTree = "<group>"; };
 		71C4FB012D80361100F25160 /* NetworkLynxProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLynxProvider.h; sourceTree = "<group>"; };
 		71C4FB022D80361100F25160 /* NetworkLynxProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLynxProvider.m; sourceTree = "<group>"; };
 		71C4FB062D8041BB00F25160 /* GoogleMaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMaps.h; sourceTree = "<group>"; };
@@ -87,8 +87,6 @@
 				71C4FB082D8041BB00F25160 /* google-maps */,
 				2B94A4272D66D75B0060892C /* AppDelegate.h */,
 				2B94A4282D66D75B0060892C /* AppDelegate.m */,
-				2B94A42A2D66D75B0060892C /* SceneDelegate.h */,
-				2B94A42B2D66D75B0060892C /* SceneDelegate.m */,
 				2B94A42D2D66D75B0060892C /* ViewController.h */,
 				2B94A42E2D66D75B0060892C /* ViewController.m */,
 				2B94A4302D66D75B0060892C /* Main.storyboard */,
@@ -100,6 +98,8 @@
 				2B94A4412D66D9020060892C /* AssetsLynxProvider.m */,
 				71C4FB012D80361100F25160 /* NetworkLynxProvider.h */,
 				71C4FB022D80361100F25160 /* NetworkLynxProvider.m */,
+				71C17F562D8467E600EB98ED /* LynxInitProcessor.h */,
+				71C17F572D8467E600EB98ED /* LynxInitProcessor.m */,
 			);
 			path = "Hello-Lynx-OC";
 			sourceTree = "<group>";
@@ -259,9 +259,9 @@
 				2B94A4292D66D75B0060892C /* AppDelegate.m in Sources */,
 				71C4FB092D8041BB00F25160 /* GoogleMaps.m in Sources */,
 				2B94A43A2D66D75D0060892C /* main.m in Sources */,
+				71C17F582D8467E600EB98ED /* LynxInitProcessor.m in Sources */,
 				71378AA22D81A58800A1AA70 /* AppleMap.m in Sources */,
 				71C4FB032D80361100F25160 /* NetworkLynxProvider.m in Sources */,
-				2B94A42C2D66D75B0060892C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +419,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +449,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -89,6 +89,7 @@ class GoogleMapElement extends HTMLElement {
         mapId: "GOOGLE_MAPS_MAP_ID",
         center: { lat: this.latitude!, lng: this.longitude! },
         zoom: this.zoom,
+        disableDefaultUI: true,
       });
       if (this.markerQueue.length > 0) {
         this.markerQueue.forEach((params) => {

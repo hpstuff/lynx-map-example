@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "+[LynxUIKitAPIAdapter getStatusBarFrame]:LynxUIKitAPIAdapter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[LynxUIKitAPIAdapter getKeyWindow].windowScene">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[LynxUIKitAPIAdapter getKeyWindow]:LynxUIKitAPIAdapter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "((UIWindowScene *)scene).keyWindow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

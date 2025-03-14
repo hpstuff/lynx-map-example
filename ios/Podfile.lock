@@ -61,6 +61,8 @@ PODS:
     - PrimJS/napi/quickjs
     - PrimJS/quickjs
   - Lynx/ReleaseResource (3.2.0-rc.0)
+  - Lynx/Replay (3.2.0-rc.0):
+    - Lynx/Framework
   - LynxDevtool (3.2.0-rc.0):
     - LynxDevtool/Framework (= 3.2.0-rc.0)
     - LynxDevtool/LynxCore (= 3.2.0-rc.0)
@@ -132,6 +134,7 @@ DEPENDENCIES:
   - Google-Maps-iOS-Utils (= 4.2.2)
   - GoogleMaps (= 7.3.0)
   - Lynx/Framework (= 3.2.0-rc.0)
+  - Lynx/Replay (= 3.2.0-rc.0)
   - LynxService/Devtool (= 3.2.0-rc.0)
   - LynxService/Http (= 3.2.0-rc.0)
   - LynxService/Image (= 3.2.0-rc.0)
@@ -170,6 +173,6 @@ SPEC CHECKSUMS:
   SDWebImageWebPCoder: 295a6573c512f54ad2dd58098e64e17dcf008499
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
 
-PODFILE CHECKSUM: cb4346ff2b61e526e3fd026587c989f90e1e463b
+PODFILE CHECKSUM: 64f8323386e4e55887523055857c3f3343c3e366
 
 COCOAPODS: 1.16.2
